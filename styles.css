@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+aside {
+    display: block;
+    max-width: 38%;
+    float: right;
+    border: 1px black solid;
+    margin-right: 50;
+    line-height: 1rem;
+}
+
+.text {
+    line-height: 0;
+}
+
+:root {
+    --primary-color :#F87171;
+    /**--primary-color:#cf613a;**/
+    --dark-gray : #374151;
+   /** --light-primary : #FEE2E2;**/
+   --light-primary: #E5E7EB;
+   --dark-pink : #d41340;
+   --black: #1F2937;
+}
+
+/** containers **/
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.container-blog-text {
+    max-width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    line-height: 4rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+/** horizontal line **/
+hr {
+    margin : 2rem 0rem;
+}
+
+/** lists **/
+.list-no-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+/** nav **/
+.navigation {
+    background-color: var(--black);
+    color:var(--primary-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .nav-brand {
+    font-weight: bolder;
+    font-size: 500%;
+    padding-left: 4rem;
+    padding-top: 3rem;
+    /**font-family: 'Montserrat', sans-serif;**/
+}
+
+.navigation .link-active {
+    font-weight: bolder;
+}
+
+/** header **/
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-image{
+    margin: auto;
+    max-width: 400px;
+    display: block;
+}
+
+.hero .hero-heading {
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+/** section **/
+.section {
+    padding: 3rem;
+}
+
+.section h1, h2, h3 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--light-primary);
+}
+
+/** footer **/
+.footer {
+    background-color: var(--black);
+    padding: 5rem;
+    color : white;
+    text-align: center;
+}
+
+.footer .footer-heading {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.footer .link-social .link {
+    color : white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.progress-meter { 
+    height: 0.5rem;
+    width: 60%;
+	position: relative;
+	background: black;
+	border-radius: 0.5rem;
+	padding: 0.2rem;
+}
+
+.progress-meter > span {
+    display: block;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    position: relative;
+  }
+
+  .progress-text {
+      line-height: 0.5rem;
+  }
+
+  .technologies {
+      column-count: 2;
+      column-width: 50%;
+      column-rule: sollid 1px black;
+      text-align: center;
+  }
+
+  .col2 {
+      padding-top: 1rem;
+  }
+
+/** for columnstrial.html **/
+.blog-column {
+    padding : 1rem;
+}
+
+.column-left {
+    width: 75%;
+    padding-right: 1rem;
+    background-color: var(--light-primary);
+    align-content: center;
+    position: relative;
+    float:left;
+}
+
+.column-right {
+    width: 22%;
+    padding: 0.1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    float:right;
+    background-color:var(--primary-color);
+}
+.column-right ol {
+    padding-left: 2rem;
+    align-content: center;
+}
+
+.column-right li {
+    padding-top : 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.column-right a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.row:after {
+    content: "";
+    box-sizing: border-box;
+    display: table;
+    clear: both;
+    column-count: 3;
+}
+
+.blog-list {
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.blog h1 {
+    font-size: xx-large;
+}
+
+.blog-text {
+    justify-content: left;
+}
